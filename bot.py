@@ -39,6 +39,9 @@ def text_msg(data):
     return res_text
 
 
+# send_message(get_chat_id(last_update(get_updates(api))), text_msg(last_update(get_updates(api))))
+
+
 def main():
     print('Listening...')
     update_id = last_update(get_updates(api))['update_id'] + 1
